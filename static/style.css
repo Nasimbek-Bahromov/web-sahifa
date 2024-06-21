@@ -1,0 +1,59 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 0;
+    background-color: #fff;
+}
+
+.h1 {
+    text-align: center;
+    animation: horizontal 1s infinite;
+    color: red;
+}
+
+.h1:hover {
+    animation-play-state: paused; 
+}
+
+.h3 {
+    color: blue;
+}
+
+.lorem>.h3:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 4);
+}
+
+.box, .box1 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box img, .box1 img {
+    width: 400px;
+    margin-right: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box img:hover, .box1 img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.text {
+    max-width: 500px;
+}
+
+@keyframes horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
